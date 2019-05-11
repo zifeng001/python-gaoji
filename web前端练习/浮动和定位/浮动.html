@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+        }
+        .box1{
+            background:green;
+            /*浮动
+                左浮动float:left
+                有浮动float:right
+                1, 浮动会让元素脱离文档流，后面不浮动的会占据原来的位置
+                2， 停止浮动
+                        a, 碰到父级元素的边界会停止
+                        b, 碰到前面有浮动的元素
+                 3，浮动会把元素转换成行内块元素，让元素并在一行*/
+            float:left;
+        }
+        .box2{
+            width:220px;
+            background:red;
+
+            float:right;
+        }
+        .box3{
+            width:220px;
+            background:yellow;
+        }
+        .box4{
+            background:blue;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+</body>
+</html>

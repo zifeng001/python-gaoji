@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css外边距</title>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            border: 10px solid blueviolet;
+        }
+        .item1{
+            background:green;
+            /* 设置item 的地步外间距，让他距离item20px*/
+            /* margin 设置外间距*/
+            /*margin-bottom:20px;*/
+        }
+        .item2{
+            background:red;
+            /*margin-top:20px;*/
+            /*margin-left:20px;*/
+
+            /* 当设置的哥值时候
+                第一个值代表当前元素距离上边元素的间距
+                第二个值代表当前元素距离右边的间距
+                第三个值代表当前元素距离下边的间距
+                第四个值代表当前元素距离左边的间距
+                 顺时针*/
+
+            /* margin 设置水平居中*/
+            /*margin:0 auto;*/
+
+            /* margin 设置复值，让边框合并*/
+            margin-top:-10px;
+        }
+
+    </style>
+</head>
+<body>
+    <!--外边距，是元素距离外部元素的间距-->
+    <div class="item1"></div>
+    <div class="item2"></div>
+</body>
+</html>

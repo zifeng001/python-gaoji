@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点操作</title>
+    <script src="jquery-1.8.3.min.js"></script>
+    <style>
+        *{margin:0;padding:0}
+        .wrap{
+            width:400px;
+            height:400px;
+            border:1px solid red;
+
+        }
+
+        .item{
+            width:100px;
+            height:100px;
+            background:pink;
+            border-radius:50%;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    <button>在元素尾部插入元素</button>
+    <button>在元素前面插入元素</button>
+    <div class="wrap"></div>
+
+    <script>
+        var oDiv=null;
+        //绑定事件
+        // 在元素的尾部插入元素 append() appendTo()
+        $('button').eq(0).click(function(){
+            // 新建的元素
+           creatDiv();
+            // 通过append() 方法插入一个新的元素
+            // 在元素尾部插入新元素
+            //$('.wrap').append(oDiv);
+            oDiv.appendTo($('.wrap'));
+        });
+        // 绑定事件
+        //在元素前面插入元素
+        $('button').eq(1).click(function(){
+            creatDiv();
+            $('.wrap').prepend(oDiv);
+
+        });
+
+        // 定义随机函数0-255
+        function rand(m,n){
+            return Math.floor(Math.random()*(n-m+1))+m;
+        }
+
+        function creatDiv(){
+            oDiv=$('<div class="item"></div>');
+            oDiv.css('background','rgb('+rand(0,255)+','+rand(0,255)+','+rand(0,255)+')');
+        }
+    </script>
+</body>
+</html>

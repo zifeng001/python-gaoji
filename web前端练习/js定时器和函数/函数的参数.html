@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+            在函数调用时，不传实参函数依然可以执行，形参返回undifiend
+
+        */
+        function demo(a,b){
+            console.log(a,b);
+            console.log(arguments);
+            for(i in arguments){
+                console.log(arguments[i]);
+            }
+        }
+        demo(1,2,3,4);
+    </script>
+</body>
+</html>

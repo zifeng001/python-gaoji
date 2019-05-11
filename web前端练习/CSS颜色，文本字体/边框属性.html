@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框属性</title>
+    <style>
+        .item{
+            width: 200px;
+            height: 200px;
+            /* border 设置边框 solid 实线 dotted 点线  dashed 虚线 */
+            /*border:1px solid black;*/
+            /*border:dotted red 2px;*/
+            /*border: blue 3px dashed*/
+
+            /*单独设置上下左右边框*/
+            border-top: red 3px solid;
+            border-left: blue 3px dashed;
+            border-bottom: green 3px solid;
+            border-right: black 3px dashed;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 3px solid green;
+            /* border-radius 设置圆角
+            给一个值是设置4个角的圆角属性
+            如果给4个值（按顺时针）
+                    第一个值是左上角
+                    第二个值是右上角
+                    第三个值是右下角
+                    第四个值是左下角*/
+            border-radius: 10px;
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            border: 2px red solid
+            /* box-shadow 设置阴影
+                    第一个值设置水平方向位移
+                    第二个值设置垂直方向位移
+                    第三个值设置模糊程度
+                    第四个值设置扩散范围
+                    第五个值设置阴影颜色
+                    第六个值设置是否为内阴影，是的话 inset*/
+
+        }
+        .box1:hover{
+            box-shadow: 10px 10px 20px 10px #ccc
+        }
+
+    </style>
+</head>
+<body>
+    <div class="item"></div>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>

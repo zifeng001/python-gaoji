@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量作用域</title>
+</head>
+<body>
+    <script>
+        /*
+            全局变量，在函数外部使用声明的变量
+            局部变量，在函数内部声明的变量是局部变量
+        */
+        var a=1;
+        function demo(){
+            var b=4;
+            console.log(a);
+        }
+        demo();
+        // console.log(b);
+    </script>
+</body>
+</html>

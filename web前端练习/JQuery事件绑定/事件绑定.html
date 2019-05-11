@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件基本绑定</title>
+    <script src="jquery-1.8.3.min.js"></script>
+    <style>
+        #item1{
+            width:200px;
+            height:200px;
+            background:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="item1"></div>
+    <script>
+        // 基本绑定
+        // $('#item1').click(function(){
+        //     console.log('基本事件绑定方法')
+        // });
+
+        //bind方法绑定
+        $('#item1').bind('click',function(){
+            console.log('bind方法绑定');
+        });
+
+        //双击事件
+        $('#item1').dblclick(function(){
+            console.log('这是双击事件');
+        });
+
+        //解除事件绑定
+        // 如果不指定解除事件，那么就会解除元素上的所有事件
+        // 如果解除指定事件，就给传指定事件的参数
+        // $('#item1').unbind();
+    </script>
+</body>
+</html>

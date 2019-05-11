@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用jquery操作元素的样式</title>
+    <script src="jquery-1.8.3.min.js"></script>
+</head>
+<body>
+    <div class="item1" id="name"></div>
+
+    <script>
+        //操作元素样式
+            // 1,用css获取元素对象
+        // var el=document.getElementById('name');
+        // el.style.width='200px';
+        // el.style.height='200px';
+        // el.style.background='red';
+
+        // $('.item1').css('width','100px');
+        // $('.item1').css('height','100px');
+        // $('.item1').css('background','blue');
+
+        // 一次设置多个样式
+        $('.item1').css({width:'100px', height:'100px', border:'1px solid yellow'})
+
+
+
+    </script>
+</body>
+</html>
